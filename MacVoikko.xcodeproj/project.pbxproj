@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					B56EB5E01A3D01F0001DA69D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2K5J2584NX;
 					};
 					B56EB5F31A3D01F1001DA69D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -377,6 +378,8 @@
 		B56EB5FF1A3D01F2001DA69D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacVoikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -384,8 +387,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thirdparty/build/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/thirdparty/build/include";
 				WRAPPER_EXTENSION = service;
 			};
@@ -394,6 +398,8 @@
 		B56EB6001A3D01F2001DA69D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacVoikko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -401,8 +407,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thirdparty/build/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/thirdparty/build/include";
 				WRAPPER_EXTENSION = service;
 			};
