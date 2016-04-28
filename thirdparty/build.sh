@@ -1,6 +1,10 @@
 #!/bin/sh
 
 ROOT="$PWD"
+SDKHOME=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+MACOSTARGET=10.6
+SDKNAME=MacOSX${MACOSTARGET}.sdk
+SDK=${SDKHOME}/${SDKNAME}
 
 # set by Xcode, causes conflicts
 unset PROJECT
@@ -12,7 +16,13 @@ echo "\n** Building libarchive **\n"
 if [[ ! -d libarchive-build ]]; then
 	mkdir libarchive-build && cd libarchive-build
 	# Disable some things that aren't included in OS X but might have been installed by Homebrew
-	cmake -DCMAKE_INSTALL_PREFIX="$ROOT/build" -DENABLE_NETTLE=OFF -DENABLE_LZMA=OFF ../libarchive
+	cmake -DCMAKE_INSTALL_PREFIX="$ROOT/build" \
+		  -DENABLE_NETTLE=OFF \
+		  -DENABLE_LZMA=OFF \
+		  -DCMAKE_OSX_ARCHITECTURES="i386;x86_64" \
+		  -DCMAKE_OSX_SYSROOT=${SDK} \
+		  -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSTARGET} \
+		  ../libarchive
 	make all install
 	cd "$ROOT"
 fi
@@ -21,7 +31,12 @@ echo "\n** Building TinyXML2 **\n"
 
 if [[ ! -d tinyxml2-build ]]; then
 	mkdir tinyxml2-build && cd tinyxml2-build
-	cmake -DCMAKE_INSTALL_PREFIX="$ROOT/build" -DCMAKE_MACOSX_RPATH=ON ../tinyxml2
+	cmake -DCMAKE_INSTALL_PREFIX="$ROOT/build" \
+		  -DCMAKE_MACOSX_RPATH=ON \
+		  -DCMAKE_OSX_ARCHITECTURES="i386;x86_64" \
+		  -DCMAKE_OSX_SYSROOT=${SDK} \
+		  -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSTARGET} \
+		  ../tinyxml2
 	make all install
 	cd "$ROOT"
 fi
