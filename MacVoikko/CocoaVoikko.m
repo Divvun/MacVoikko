@@ -22,6 +22,9 @@
 			*error = [[NSError alloc] initWithDomain:VoikkoErrorDomain code:VoikkoInitError userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithUTF8String:cError]}];
 			return nil;
 		}
+#ifdef DEBUG
+        NSLog(@"Initialised %@", langCode);
+#endif
 	}
 	
 	return self;
