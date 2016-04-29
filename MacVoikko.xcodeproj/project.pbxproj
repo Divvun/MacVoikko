@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F8D6D21CD3793C00195ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F8D6D11CD3793C00195ED5 /* Images.xcassets */; };
 		B54587261A45ACE0003FEA3C /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = B54587251A45ACDF003FEA3C /* Dictionaries */; };
 		B55FDC3B1A3DD06700E3C4DA /* CocoaVoikko.m in Sources */ = {isa = PBXBuildFile; fileRef = B55FDC3A1A3DD06700E3C4DA /* CocoaVoikko.m */; };
 		B56EB5EA1A3D01F0001DA69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B56EB5E91A3D01F0001DA69D /* main.m */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		41F8D6D11CD3793C00195ED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B54587251A45ACDF003FEA3C /* Dictionaries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dictionaries; sourceTree = "<group>"; };
 		B55FDC321A3DCCB700E3C4DA /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		B55FDC391A3DD06700E3C4DA /* CocoaVoikko.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaVoikko.h; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				B5ED17F31A3E8AAF0054A8C7 /* VoikkoSpellChecker.m */,
 				B5BC72AF1A41CD2F00C3877E /* PlistUpdater.h */,
 				B5BC72B01A41CD2F00C3877E /* PlistUpdater.m */,
+				41F8D6D11CD3793C00195ED5 /* Images.xcassets */,
 			);
 			path = MacVoikko;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54587261A45ACE0003FEA3C /* Dictionaries in Resources */,
+				41F8D6D21CD3793C00195ED5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +382,8 @@
 		B56EB5FF1A3D01F2001DA69D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacVoikko/Info.plist;
@@ -387,7 +392,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thirdparty/build/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.puimula.voikko.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -399,7 +404,8 @@
 		B56EB6001A3D01F2001DA69D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacVoikko/Info.plist;
@@ -408,7 +414,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thirdparty/build/lib",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.puimula.voikko.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
