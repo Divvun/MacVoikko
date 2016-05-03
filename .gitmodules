@@ -7,3 +7,6 @@
 [submodule "thirdparty/corevoikko"]
 	path = thirdparty/corevoikko
 	url = https://github.com/voikko/corevoikko.git
+[submodule "thirdparty/hfst-ospell"]
+	path = thirdparty/hfst-ospell
+	url = https://github.com/hfst/hfst-ospell.git
