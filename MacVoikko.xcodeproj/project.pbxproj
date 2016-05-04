@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B219D41CD9F13F00BDBA20 /* libicudata.55.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		41B219D51CD9F13F00BDBA20 /* libicuuc.55.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		41F8D6D21CD3793C00195ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F8D6D11CD3793C00195ED5 /* Images.xcassets */; };
 		B54587261A45ACE0003FEA3C /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = B54587251A45ACDF003FEA3C /* Dictionaries */; };
 		B55FDC3B1A3DD06700E3C4DA /* CocoaVoikko.m in Sources */ = {isa = PBXBuildFile; fileRef = B55FDC3A1A3DD06700E3C4DA /* CocoaVoikko.m */; };
@@ -40,6 +42,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				41B219D41CD9F13F00BDBA20 /* libicudata.55.dylib in CopyFiles */,
+				41B219D51CD9F13F00BDBA20 /* libicuuc.55.dylib in CopyFiles */,
 				B59B23B21A4379490040A2FC /* libarchive.14.dylib in CopyFiles */,
 				B59B23B41A4379570040A2FC /* libhfstospell.dylib in CopyFiles */,
 				B59B23B61A4379780040A2FC /* libtinyxml2.3.0.0.dylib in CopyFiles */,
@@ -50,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.55.dylib; path = thirdparty/build/lib/libicudata.55.dylib; sourceTree = "<group>"; };
+		41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.55.dylib; path = thirdparty/build/lib/libicuuc.55.dylib; sourceTree = "<group>"; };
 		41F8D6D11CD3793C00195ED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B54587251A45ACDF003FEA3C /* Dictionaries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dictionaries; sourceTree = "<group>"; };
 		B55FDC321A3DCCB700E3C4DA /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -107,6 +113,8 @@
 				B5ED17F01A3E87540054A8C7 /* libc++.1.tbd */,
 				B5ED17EE1A3E86610054A8C7 /* libstdc++.6.0.9.tbd */,
 				B55FDC321A3DCCB700E3C4DA /* libxml2.2.tbd */,
+				41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */,
+				41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */,
 				B56EB5E31A3D01F0001DA69D /* MacVoikko */,
 				B56EB5F71A3D01F1001DA69D /* MacVoikkoTests */,
 				B56EB5E21A3D01F0001DA69D /* Products */,
