@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41B219D41CD9F13F00BDBA20 /* libicudata.55.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		41B219D51CD9F13F00BDBA20 /* libicuuc.55.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		41F8D6D21CD3793C00195ED5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F8D6D11CD3793C00195ED5 /* Images.xcassets */; };
 		B54587261A45ACE0003FEA3C /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = B54587251A45ACDF003FEA3C /* Dictionaries */; };
 		B55FDC3B1A3DD06700E3C4DA /* CocoaVoikko.m in Sources */ = {isa = PBXBuildFile; fileRef = B55FDC3A1A3DD06700E3C4DA /* CocoaVoikko.m */; };
@@ -42,8 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				41B219D41CD9F13F00BDBA20 /* libicudata.55.dylib in CopyFiles */,
-				41B219D51CD9F13F00BDBA20 /* libicuuc.55.dylib in CopyFiles */,
 				B59B23B21A4379490040A2FC /* libarchive.14.dylib in CopyFiles */,
 				B59B23B41A4379570040A2FC /* libhfstospell.dylib in CopyFiles */,
 				B59B23B61A4379780040A2FC /* libtinyxml2.3.0.0.dylib in CopyFiles */,
