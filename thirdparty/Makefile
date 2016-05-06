@@ -9,4 +9,3 @@ build:
 
 clean:
 	-rm -rf *build/
-	-rm -rf hfst-ospell/

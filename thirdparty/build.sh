@@ -52,6 +52,7 @@ if [[ ! -f build/lib/libhfstospell.dylib ]]; then
 	./configure --prefix="$ROOT/build" --enable-zhfst \
 				--with-tinyxml2=$ROOT/tinyxml2-build/ \
 				--without-libxmlpp \
+				--disable-hfst-ospell-office \
 				CPPFLAGS=" -I$ROOT/build/include -L$ROOT/build/lib" \
 				LDFLAGS=" -I$ROOT/build/include -L$ROOT/build/lib" \
 				CFLAGS=" -I$ROOT/build/include -L$ROOT/build/lib" \
@@ -61,13 +62,15 @@ if [[ ! -f build/lib/libhfstospell.dylib ]]; then
 	cd "$ROOT"
 	install_name_tool -id @rpath/libhfstospell.dylib build/lib/libhfstospell.6.dylib
 	install_name_tool -id @rpath/libhfstospell.dylib build/lib/libhfstospell.dylib
-	# Hack to work around configure picking libraries from macports instead of local ones:
-	for i in $(otool -L build/lib/libhfstospell.dylib | fgrep '/opt/local/lib' \
-				| cut -f2 | cut -d' ' -f1); do
-		target=$(basename $i)
-		cp $i build/lib/$target
-		install_name_tool -change $i @rpath/$target build/lib/libhfstospell.dylib
-	done
+#	# Hack to work around configure picking libraries from macports instead of local ones:
+#	for i in $(otool -L build/lib/libhfstospell.dylib | fgrep '/opt/local/lib' \
+#				| cut -f2 | cut -d' ' -f1); do
+#		target=$(basename $i)
+#		cp $i build/lib/$target
+#		install_name_tool -change $i @rpath/$target build/lib/libhfstospell.dylib
+#	done
+#	install_name_tool -delete_rpath @rpath/libicuuc.55.dylib build/lib/libhfstospell.6.dylib
+#	install_name_tool -delete_rpath @rpath/libicudata.55.dylib build/lib/libhfstospell.6.dylib
 fi
 
 echo "\n** Building libvoikko **\n"
@@ -82,25 +85,13 @@ if [[ ! -f build/lib/libvoikko.dylib ]]; then
 	cd "$ROOT"
 	install_name_tool -id @rpath/libvoikko.dylib build/lib/libvoikko.1.dylib
 	install_name_tool -id @rpath/libvoikko.dylib build/lib/libvoikko.dylib
-	# Hack to work around configure picking libraries from macports instead of local ones:
-	for i in $(otool -L build/lib/libvoikko.dylib | fgrep '/opt/local/lib' \
-				| cut -f2 | cut -d' ' -f1); do
-		target=$(basename $i)
-		cp $i build/lib/$target
-		install_name_tool -change $i @rpath/$target build/lib/libvoikko.dylib
-	done
+#	# Hack to work around configure picking libraries from macports instead of local ones:
+#	for i in $(otool -L build/lib/libvoikko.dylib | fgrep '/opt/local/lib' \
+#				| cut -f2 | cut -d' ' -f1); do
+#		target=$(basename $i)
+#		cp $i build/lib/$target
+#		install_name_tool -change $i @rpath/$target build/lib/libvoikko.dylib
+#	done
 	install_name_tool -change libarchive.14.dylib @rpath/libarchive.14.dylib build/lib/libvoikko.dylib
 	install_name_tool -change @rpath/libtinyxml2.3.dylib @rpath/libtinyxml2.3.0.0.dylib build/lib/libvoikko.dylib
-fi
-
-echo "\n** Building suomimalaga **\n"
-
-which malmake 2>&1 > /dev/null
-if [[ $? -eq 0 ]]; then
-	cd corevoikko/suomimalaga
-	make voikko
-	make voikko-install DESTDIR="$ROOT/../Dictionaries"
-	cd "$ROOT"
-else
-	echo "Malaga not installed. Using prebuilt dictionaries"
 fi
