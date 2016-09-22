@@ -58,7 +58,7 @@ if [[ ! -f build/lib/libhfstospell.dylib ]]; then
 				CFLAGS=" -I$ROOT/build/include -L$ROOT/build/lib" \
 				CXXFLAGS=" -I$ROOT/build/include -L$ROOT/build/lib" \
 				PKG_CONFIG_PATH=$ROOT/build/lib/pkgconfig
-	make all install
+	make all install V=0
 	cd "$ROOT"
 	install_name_tool -id @rpath/libhfstospell.dylib build/lib/libhfstospell.6.dylib
 	install_name_tool -id @rpath/libhfstospell.dylib build/lib/libhfstospell.dylib
@@ -81,7 +81,7 @@ if [[ ! -f build/lib/libvoikko.dylib ]]; then
 	# Look in both /usr/local/lib/voikko and /Library/Spelling/voikko for dictionaries
 	./configure --prefix="$ROOT/build" \
 	   --with-dictionary-path="/Library/Spelling/voikko:/usr/local/share/voikko:/usr/local/lib/voikko"
-	make all install
+	make all install V=0
 	cd "$ROOT"
 	install_name_tool -id @rpath/libvoikko.dylib build/lib/libvoikko.1.dylib
 	install_name_tool -id @rpath/libvoikko.dylib build/lib/libvoikko.dylib
