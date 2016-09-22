@@ -2,7 +2,7 @@
 
 ROOT="$PWD"
 SDKHOME=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
-MACOSTARGET=10.11
+MACOSTARGET=10.12
 SDKNAME=MacOSX${MACOSTARGET}.sdk
 SDK=${SDKHOME}/${SDKNAME}
 
