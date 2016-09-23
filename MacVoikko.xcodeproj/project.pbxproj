@@ -13,9 +13,9 @@
 		B56EB5EA1A3D01F0001DA69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B56EB5E91A3D01F0001DA69D /* main.m */; };
 		B56EB5FB1A3D01F1001DA69D /* MacVoikkoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B56EB5FA1A3D01F1001DA69D /* MacVoikkoTests.m */; };
 		B59B23B01A4379200040A2FC /* libvoikko.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B23AF1A4379200040A2FC /* libvoikko.dylib */; };
-		B59B23B21A4379490040A2FC /* libarchive.14.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B11A4379490040A2FC /* libarchive.14.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B59B23B21A4379490040A2FC /* libarchive.13.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B11A4379490040A2FC /* libarchive.13.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B59B23B41A4379570040A2FC /* libhfstospell.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B31A4379570040A2FC /* libhfstospell.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B59B23B61A4379780040A2FC /* libtinyxml2.3.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B51A4379780040A2FC /* libtinyxml2.3.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B59B23B61A4379780040A2FC /* libtinyxml2.2.2.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B51A4379780040A2FC /* libtinyxml2.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B59B23B81A4379830040A2FC /* libvoikko.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B59B23B71A4379820040A2FC /* libvoikko.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B5BC72B11A41CD2F00C3877E /* PlistUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BC72B01A41CD2F00C3877E /* PlistUpdater.m */; };
 		B5ED17EF1A3E86610054A8C7 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ED17EE1A3E86610054A8C7 /* libstdc++.6.0.9.tbd */; };
@@ -40,9 +40,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B59B23B21A4379490040A2FC /* libarchive.14.dylib in CopyFiles */,
+				B59B23B21A4379490040A2FC /* libarchive.13.dylib in CopyFiles */,
 				B59B23B41A4379570040A2FC /* libhfstospell.dylib in CopyFiles */,
-				B59B23B61A4379780040A2FC /* libtinyxml2.3.0.0.dylib in CopyFiles */,
+				B59B23B61A4379780040A2FC /* libtinyxml2.2.2.0.dylib in CopyFiles */,
 				B59B23B81A4379830040A2FC /* libvoikko.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,8 +50,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicudata.55.dylib; path = thirdparty/build/lib/libicudata.55.dylib; sourceTree = "<group>"; };
-		41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicuuc.55.dylib; path = thirdparty/build/lib/libicuuc.55.dylib; sourceTree = "<group>"; };
 		41F8D6D11CD3793C00195ED5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B54587251A45ACDF003FEA3C /* Dictionaries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dictionaries; sourceTree = "<group>"; };
 		B55FDC321A3DCCB700E3C4DA /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -64,9 +62,9 @@
 		B56EB5F91A3D01F1001DA69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56EB5FA1A3D01F1001DA69D /* MacVoikkoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacVoikkoTests.m; sourceTree = "<group>"; };
 		B59B23AF1A4379200040A2FC /* libvoikko.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvoikko.dylib; path = thirdparty/build/lib/libvoikko.dylib; sourceTree = "<group>"; };
-		B59B23B11A4379490040A2FC /* libarchive.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarchive.14.dylib; path = thirdparty/build/lib/libarchive.14.dylib; sourceTree = "<group>"; };
+		B59B23B11A4379490040A2FC /* libarchive.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarchive.13.dylib; path = thirdparty/build/lib/libarchive.13.dylib; sourceTree = "<group>"; };
 		B59B23B31A4379570040A2FC /* libhfstospell.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhfstospell.dylib; path = thirdparty/build/lib/libhfstospell.dylib; sourceTree = "<group>"; };
-		B59B23B51A4379780040A2FC /* libtinyxml2.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtinyxml2.3.0.0.dylib; path = thirdparty/build/lib/libtinyxml2.3.0.0.dylib; sourceTree = "<group>"; };
+		B59B23B51A4379780040A2FC /* libtinyxml2.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtinyxml2.2.2.0.dylib; path = thirdparty/build/lib/libtinyxml2.2.2.0.dylib; sourceTree = "<group>"; };
 		B59B23B71A4379820040A2FC /* libvoikko.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvoikko.dylib; path = thirdparty/build/lib/libvoikko.dylib; sourceTree = "<group>"; };
 		B5BC72AF1A41CD2F00C3877E /* PlistUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistUpdater.h; sourceTree = "<group>"; };
 		B5BC72B01A41CD2F00C3877E /* PlistUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistUpdater.m; sourceTree = "<group>"; };
@@ -102,15 +100,13 @@
 			isa = PBXGroup;
 			children = (
 				B59B23B71A4379820040A2FC /* libvoikko.dylib */,
-				B59B23B51A4379780040A2FC /* libtinyxml2.3.0.0.dylib */,
+				B59B23B51A4379780040A2FC /* libtinyxml2.2.2.0.dylib */,
 				B59B23B31A4379570040A2FC /* libhfstospell.dylib */,
-				B59B23B11A4379490040A2FC /* libarchive.14.dylib */,
+				B59B23B11A4379490040A2FC /* libarchive.13.dylib */,
 				B59B23AF1A4379200040A2FC /* libvoikko.dylib */,
 				B5ED17F01A3E87540054A8C7 /* libc++.1.tbd */,
 				B5ED17EE1A3E86610054A8C7 /* libstdc++.6.0.9.tbd */,
 				B55FDC321A3DCCB700E3C4DA /* libxml2.2.tbd */,
-				41B219D01CD9EE9100BDBA20 /* libicudata.55.dylib */,
-				41B219D11CD9EE9200BDBA20 /* libicuuc.55.dylib */,
 				B56EB5E31A3D01F0001DA69D /* MacVoikko */,
 				B56EB5F71A3D01F1001DA69D /* MacVoikkoTests */,
 				B56EB5E21A3D01F0001DA69D /* Products */,
