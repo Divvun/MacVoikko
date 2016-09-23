@@ -4,3 +4,5 @@ thirdparty/tinyxml2-build/
 *.xcscmblueprint
 *.xcuserstate
 xcschememanagement.plist
+thirdparty/hfst-ospell-build
+thirdparty/libvoikko-build
