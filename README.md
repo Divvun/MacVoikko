@@ -6,6 +6,8 @@ languages.
 This is being implemented as a [Google Code-In 2014 task](http://www.google-melange.com/gci/task/view/google/gci2014/4990598620643328)
 and is currently a work in progress.
 
+[![Build Status](https://travis-ci.org/divvun/MacVoikko.svg?branch=master)](https://travis-ci.org/divvun/MacVoikko)
+
 ### Building
 
 Dependencies are located under the `thirdparty` directory. Most are Git
