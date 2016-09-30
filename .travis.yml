@@ -1,0 +1,6 @@
+language: objective-c
+xcode_project: MacVoikko.xcodeproj
+osx_image: xcode8
+notifications:
+  email:
+    on_success: never
