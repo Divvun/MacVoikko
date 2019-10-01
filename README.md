@@ -1,3 +1,5 @@
+NB! Not maintained anymore!
+
 ## MacVoikko
 
 An OS X Spell Server implementation that uses libvoikko with arbitrary
